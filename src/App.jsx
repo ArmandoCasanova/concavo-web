@@ -7,8 +7,11 @@ import AboutUs from './components/AboutUs';
 import Location from './components/Location';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import useScrollReveal from './hooks/useScrollReveal';
 
 export default function App() {
+  useScrollReveal();
+
   return (
     <div className="min-h-screen flex flex-col bg-crema-suave text-tierra-mate selection:bg-verde-aguacate/20">
       <Navbar />

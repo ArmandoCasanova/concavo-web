@@ -10,7 +10,7 @@ export default function AboutUs() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-5 relative reveal reveal-slide-left">
             <div className="aspect-[4/5] rounded-[3rem] rounded-tr-[9rem] overflow-hidden shadow-2xl border border-crema-suave/10">
               <img
                 src={orchardImg}
@@ -21,7 +21,7 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="lg:col-span-7 space-y-10 text-left">
+          <div className="lg:col-span-7 space-y-10 text-left reveal reveal-slide-right">
             <div className="space-y-4">
               <span className="text-xs font-bold uppercase tracking-widest text-verde-claro block">
                 Origen y Compromiso
@@ -55,7 +55,7 @@ export default function AboutUs() {
 
         </div>
 
-        <div className="mt-20 pt-10 border-t border-crema-suave/10 text-left">
+        <div className="mt-20 pt-10 border-t border-crema-suave/10 text-left reveal reveal-slide-up delay-100">
           <span className="text-[10px] font-bold uppercase tracking-widest text-verde-claro block mb-6">
             Acreditaciones internacionales
           </span>

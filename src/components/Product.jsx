@@ -17,7 +17,7 @@ export default function Product() {
       <div className="max-w-7xl mx-auto px-12 sm:px-16 lg:px-24 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
 
-          <div className="lg:col-span-5 flex items-center lg:items-end justify-center lg:justify-start">
+          <div className="lg:col-span-5 flex items-center lg:items-end justify-center lg:justify-start reveal reveal-slide-left">
             <div className="w-full flex items-center lg:items-end justify-center lg:justify-start">
               <img
                 src={aguacateMano}
@@ -27,7 +27,7 @@ export default function Product() {
             </div>
           </div>
 
-          <div className="lg:col-span-7 flex flex-col justify-between text-left space-y-8 pb-12 lg:pb-20">
+          <div className="lg:col-span-7 flex flex-col justify-between text-left space-y-8 pb-12 lg:pb-20 reveal reveal-slide-right">
             <div className="space-y-4">
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display text-[#bc5b27] font-black tracking-tight uppercase">
                 Aguacate&nbsp;&nbsp;&nbsp;&nbsp;Hass
@@ -38,7 +38,7 @@ export default function Product() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
-              <div className="flex flex-col items-center text-center space-y-3">
+              <div className="flex flex-col items-center text-center space-y-3 reveal reveal-slide-up delay-75">
                 <div className="animate-gentle-float">
                   <div className="w-16 h-16 rounded-full border-2 border-[#bc5b27] flex items-center justify-center bg-[#bc5b27]/10 p-0.5 transform hover:scale-110 transition-transform duration-300 cursor-pointer">
                     <div className="w-full h-full rounded-full bg-[#bc5b27] flex items-center justify-center text-white">
@@ -56,7 +56,7 @@ export default function Product() {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center text-center space-y-3">
+              <div className="flex flex-col items-center text-center space-y-3 reveal reveal-slide-up delay-150">
                 <div className="animate-gentle-float [animation-delay:0.5s]">
                   <div className="w-16 h-16 rounded-full border-2 border-[#bc5b27] flex items-center justify-center bg-[#bc5b27]/10 p-0.5 transform hover:scale-110 transition-transform duration-300 cursor-pointer">
                     <div className="w-full h-full rounded-full bg-[#bc5b27] flex items-center justify-center text-white">
@@ -74,7 +74,7 @@ export default function Product() {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center text-center space-y-3">
+              <div className="flex flex-col items-center text-center space-y-3 reveal reveal-slide-up delay-300">
                 <div className="animate-gentle-float [animation-delay:1s]">
                   <div className="w-16 h-16 rounded-full border-2 border-[#bc5b27] flex items-center justify-center bg-[#bc5b27]/10 p-0.5 transform hover:scale-110 transition-transform duration-300 cursor-pointer">
                     <div className="w-full h-full rounded-full bg-[#bc5b27] flex items-center justify-center text-white">

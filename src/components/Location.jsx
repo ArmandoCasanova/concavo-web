@@ -7,14 +7,14 @@ export default function Location() {
     <section id="ubicacion" className="py-10 md:py-16 bg-crema-hueso/30 border-t border-crema-hueso/40">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-        <div className="text-center max-w-3xl mx-auto mb-8 space-y-4">
+        <div className="text-center max-w-3xl mx-auto mb-8 space-y-4 reveal reveal-slide-up">
           <h2 className="text-4xl sm:text-5xl font-display text-verde-oscuro font-black uppercase">
             CENTRAL DE ABASTOS
           </h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mb-8">
-          <div className="bg-crema-suave border border-crema-hueso rounded-2xl p-3 sm:p-6 flex flex-col items-center text-center space-y-2 sm:space-y-3 shadow-sm">
+          <div className="bg-crema-suave border border-crema-hueso rounded-2xl p-3 sm:p-6 flex flex-col items-center text-center space-y-2 sm:space-y-3 shadow-sm reveal reveal-slide-up delay-75">
             <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-verde-brand/10 flex items-center justify-center text-verde-brand">
               <MapPin className="w-4 h-4 sm:w-6 sm:h-6" />
             </div>
@@ -26,7 +26,7 @@ export default function Location() {
             </div>
           </div>
 
-          <div className="bg-crema-suave border border-crema-hueso rounded-2xl p-3 sm:p-6 flex flex-col items-center text-center space-y-2 sm:space-y-3 shadow-sm">
+          <div className="bg-crema-suave border border-crema-hueso rounded-2xl p-3 sm:p-6 flex flex-col items-center text-center space-y-2 sm:space-y-3 shadow-sm reveal reveal-slide-up delay-150">
             <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-verde-brand/10 flex items-center justify-center text-verde-brand">
               <Clock className="w-4 h-4 sm:w-6 sm:h-6" />
             </div>
@@ -38,7 +38,7 @@ export default function Location() {
             </div>
           </div>
 
-          <div className="bg-crema-suave border border-crema-hueso rounded-2xl p-3 sm:p-6 flex flex-col items-center text-center space-y-2 sm:space-y-3 shadow-sm">
+          <div className="bg-crema-suave border border-crema-hueso rounded-2xl p-3 sm:p-6 flex flex-col items-center text-center space-y-2 sm:space-y-3 shadow-sm reveal reveal-slide-up delay-200">
             <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-verde-brand/10 flex items-center justify-center text-verde-brand">
               <Phone className="w-4 h-4 sm:w-6 sm:h-6" />
             </div>
@@ -52,7 +52,7 @@ export default function Location() {
             </div>
           </div>
 
-          <div className="bg-crema-suave border border-crema-hueso rounded-2xl p-3 sm:p-6 flex flex-col items-center text-center space-y-2 sm:space-y-3 shadow-sm">
+          <div className="bg-crema-suave border border-crema-hueso rounded-2xl p-3 sm:p-6 flex flex-col items-center text-center space-y-2 sm:space-y-3 shadow-sm reveal reveal-slide-up delay-300">
             <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-verde-brand/10 flex items-center justify-center text-verde-brand">
               <Mail className="w-4 h-4 sm:w-6 sm:h-6" />
             </div>
@@ -68,7 +68,7 @@ export default function Location() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-          <div className="rounded-3xl overflow-hidden shadow-sm border border-crema-hueso min-h-[350px] lg:h-[450px] order-2 lg:order-1">
+          <div className="rounded-3xl overflow-hidden shadow-sm border border-crema-hueso min-h-[350px] lg:h-[450px] order-2 lg:order-1 reveal reveal-slide-left">
             <img
               src={outsideImg}
               alt="Instalaciones de Conavo"
@@ -76,7 +76,7 @@ export default function Location() {
             />
           </div>
 
-          <div className="rounded-3xl overflow-hidden shadow-sm border border-crema-hueso relative min-h-[350px] lg:h-[450px] bg-crema-hueso order-1 lg:order-2">
+          <div className="rounded-3xl overflow-hidden shadow-sm border border-crema-hueso relative min-h-[350px] lg:h-[450px] bg-crema-hueso order-1 lg:order-2 reveal reveal-slide-right">
             <iframe
               src={COMPANY_INFO.mapsEmbedUrl}
               width="100%"

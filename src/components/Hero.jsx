@@ -12,7 +12,7 @@ export default function Hero() {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          <div className="lg:col-span-7 text-left space-y-8 animate-slide-up">
+          <div className="lg:col-span-7 text-left space-y-8 reveal reveal-slide-up">
             
             <div className="space-y-4">
               <span className="text-xs font-bold uppercase tracking-widest text-verde-aguacate block">
@@ -48,7 +48,7 @@ export default function Hero() {
 
           </div>
 
-          <div className="lg:col-span-5 relative flex justify-center lg:justify-end animate-fade-in">
+          <div className="lg:col-span-5 relative flex justify-center lg:justify-end reveal reveal-scale-up delay-150">
             <div className="relative w-full max-w-md lg:max-w-none aspect-square">
               
               <div className="absolute inset-0 bg-gradient-to-tr from-verde-claro/20 via-verde-aguacate/10 to-transparent rounded-[4rem] rounded-tl-[8rem] rotate-3 scale-105 -z-10"></div>
@@ -70,7 +70,7 @@ export default function Hero() {
 
         </div>
 
-        <div className="mt-20 md:mt-28 bg-[#1A2614] text-crema-suave px-8 py-8 md:py-10 rounded-[2.5rem] shadow-xl relative overflow-hidden">
+        <div className="mt-20 md:mt-28 bg-[#1A2614] text-crema-suave px-8 py-8 md:py-10 rounded-[2.5rem] shadow-xl relative overflow-hidden reveal reveal-slide-up delay-300">
           <div className="absolute inset-0 opacity-5 bg-grid-pattern pointer-events-none"></div>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4 relative z-10">
