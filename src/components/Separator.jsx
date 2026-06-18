@@ -20,7 +20,7 @@ export default function Separator({ bgPattern = 'slices', message = '' }) {
 
   return (
     <div className="relative w-full h-24 md:h-28 flex items-center justify-center overflow-hidden border-y border-black/5">
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${getPatternImage()})` }}
       />

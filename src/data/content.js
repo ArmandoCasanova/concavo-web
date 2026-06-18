@@ -1,10 +1,10 @@
 
 export const COMPANY_INFO = {
-  name: 'Cóncavo',
+  name: 'Conavo',
   tagline: 'Agroindustrial',
   phone: '+52 452 123 4567',
   whatsapp: 'https://wa.me/524521234567?text=Hola,%20solicito%20información%20sobre%20aguacates.',
-  email: 'contacto@concavoagro.com',
+  email: 'contacto@conavoagro.com',
   address: 'Carretera Uruapan-Pátzcuaro Km 8.5, Uruapan, Michoacán, México',
   mapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15024.965672152865!2d-102.04018338902888!3d19.38030018804791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842e1ec73167197b%3A0xe10842db13efbe0d!2sUruapan%2C%20Mich.!5e0!3m2!1ses-419!2smx!4v1718645000000!5m2!1ses-419!2smx',
 };

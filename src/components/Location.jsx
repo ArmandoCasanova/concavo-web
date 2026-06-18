@@ -5,9 +5,9 @@ export default function Location() {
   return (
     <section id="ubicacion" className="py-16 md:py-24 bg-crema-hueso/30 border-t border-crema-hueso/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          
+
           {/* Left: Contact Info details (5 cols) */}
           <div className="lg:col-span-5 bg-crema-suave rounded-3xl p-6 sm:p-8 border border-crema-hueso shadow-sm flex flex-col justify-between space-y-8">
             <div className="space-y-4">
@@ -68,7 +68,7 @@ export default function Location() {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación de Cóncavo Agroindustrial"
+              title="Ubicación de Conavo Agroindustrial"
               className="absolute inset-0 w-full h-full"
             ></iframe>
           </div>

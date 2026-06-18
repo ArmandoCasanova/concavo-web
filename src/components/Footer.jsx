@@ -5,14 +5,14 @@ export default function Footer() {
   return (
     <footer className="bg-[#1A2614] text-crema-suave/80 border-t border-crema-suave/5 py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start mb-12">
-          
+
           <div className="md:col-span-6 space-y-4 text-left">
             <a href="#inicio" className="flex items-center transition-transform hover:scale-[1.01]">
               <img
                 src={imagotipo}
-                alt="Cóncavo"
+                alt="Conavo"
                 className="h-8 w-auto object-contain brightness-0 invert"
               />
             </a>
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-crema-suave/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-crema-suave/40 font-bold uppercase tracking-wider">
-          <p>© {new Date().getFullYear()} Cóncavo. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Conavo. Todos los derechos reservados.</p>
           <div className="flex gap-4">
             <a href="#contacto" className="hover:underline">Políticas</a>
             <span>•</span>

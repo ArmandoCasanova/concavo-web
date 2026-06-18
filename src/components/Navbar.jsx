@@ -17,20 +17,19 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-500 ${
-        isScrolled
+      className={`sticky top-0 z-50 transition-all duration-500 ${isScrolled
           ? 'bg-crema-suave/80 backdrop-blur-lg border-b border-verde-brand/5 py-4'
           : 'bg-transparent py-7'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex items-center justify-between">
-          
+
           {/* Logo / Brand Imagotipo */}
           <a href="#inicio" className="flex items-center transition-transform hover:scale-[1.01]">
             <img
               src={imagotipo}
-              alt="Cóncavo"
+              alt="Conavo"
               className="h-9 w-auto object-contain"
             />
           </a>
@@ -54,7 +53,7 @@ export default function Navbar() {
               href="#contacto"
               className="inline-flex items-center justify-center px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-crema-suave bg-verde-brand hover:bg-verde-aguacate rounded-full transition-all duration-300 hover:shadow-md hover:shadow-verde-aguacate/10"
             >
-              Escribirnos
+              Contacto
             </a>
           </div>
 
@@ -73,9 +72,8 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu - Minimalist full height overlay */}
       <div
-        className={`fixed inset-y-0 right-0 z-40 w-full max-w-xs bg-crema-suave/95 backdrop-blur-xl border-l border-crema-hueso flex flex-col md:hidden transition-transform duration-500 ease-in-out transform ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed inset-y-0 right-0 z-40 w-full max-w-xs bg-crema-suave/95 backdrop-blur-xl border-l border-crema-hueso flex flex-col md:hidden transition-transform duration-500 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
         style={{ top: '68px', height: 'calc(100vh - 68px)' }}
       >
         <div className="flex-1 px-8 py-12 space-y-6">
@@ -99,7 +97,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
             className="flex items-center justify-center w-full py-4 rounded-full bg-verde-brand hover:bg-verde-aguacate text-crema-suave font-bold text-sm uppercase tracking-wider transition-all"
           >
-            Escribirnos
+            Contacto
           </a>
         </div>
       </div>
