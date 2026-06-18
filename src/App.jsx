@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
 import Hero from './components/Hero';
+import Separator from './components/Separator';
 import Product from './components/Product';
 import AboutUs from './components/AboutUs';
 import Location from './components/Location';
@@ -14,8 +15,10 @@ export default function App() {
       <main className="flex-grow">
         <Carousel />
         <Hero />
+        <Separator bgPattern="slices" message="Sabor Natural en Cada Cosecha" />
         <Product />
         <AboutUs />
+        <Separator bgPattern="leaves" message="Compromiso con la Tierra y Nuestra Gente" />
         <Location />
         <Contact />
       </main>

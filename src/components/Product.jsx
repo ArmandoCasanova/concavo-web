@@ -1,106 +1,100 @@
-import { Check } from 'lucide-react';
-import { PRODUCT_CONTENT } from '../data/content';
+import React from 'react';
+import { Sprout, BadgeCheck, CircleDollarSign } from 'lucide-react';
+import aguacateMano from '../assets/aguacate_mano.webp';
 
 export default function Product() {
   return (
-    <section id="producto" className="py-20 md:py-28 bg-[#FAF9F5] border-t border-crema-hueso">
+    <section id="producto" className="py-20 md:py-28 bg-[#E6ECE2]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        
-        <div className="max-w-3xl mb-20 space-y-6">
-          <span className="text-xs font-bold uppercase tracking-widest text-verde-aguacate block">
-            Ficha Técnica
-          </span>
-          <h2 className="text-4xl sm:text-5xl font-display text-verde-oscuro font-extrabold leading-tight tracking-tight">
-            {PRODUCT_CONTENT.title}
-          </h2>
-          <p className="text-base sm:text-lg text-tierra-clara font-medium">
-            {PRODUCT_CONTENT.subtitle}
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
           
-          <div className="lg:col-span-5 space-y-8 text-left">
-            <div>
-              <span className="text-[10px] font-bold text-oro-aceite uppercase tracking-widest block mb-2">Variedad Estrella</span>
-              <h3 className="text-2xl sm:text-3xl font-display text-verde-oscuro font-bold tracking-tight">
-                {PRODUCT_CONTENT.variety.name}
-              </h3>
-              <p className="text-xs text-tierra-clara mt-1 font-semibold italic">
-                {PRODUCT_CONTENT.variety.origin}
+          <div className="lg:col-span-5 flex items-center justify-center">
+            <div className="w-full h-full flex items-center justify-center">
+              <img
+                src={aguacateMano}
+                alt="Aguacate fresco en mano"
+                className="w-full h-full max-h-[450px] lg:max-h-none object-contain"
+              />
+            </div>
+          </div>
+          
+          <div className="lg:col-span-7 flex flex-col justify-between text-left space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-5xl sm:text-6xl font-display text-verde-oscuro font-black tracking-tight uppercase">
+                Hass
+              </h2>
+              <p className="text-lg sm:text-xl text-tierra-clara leading-relaxed font-semibold">
+                El aguacate Hass destaca por su pulpa increíblemente cremosa, su sabor sutil a nuez y su gran aporte nutricional, siendo el preferido en mesas de todo el mundo.
               </p>
             </div>
             
-            <p className="text-base text-tierra-clara leading-relaxed font-medium">
-              {PRODUCT_CONTENT.variety.description}
-            </p>
-
-            <div className="pt-6 border-t border-crema-hueso space-y-6">
-              <h4 className="text-xs font-bold uppercase tracking-widest text-verde-brand">
-                Detalles del Fruto
-              </h4>
-              <ul className="space-y-4">
-                {PRODUCT_CONTENT.variety.specs.map((spec, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-4 h-4 text-verde-aguacate shrink-0 mt-1" />
-                    <div>
-                      <span className="block text-sm font-extrabold text-verde-oscuro">{spec.name}</span>
-                      <span className="block text-xs sm:text-sm text-tierra-clara font-medium mt-0.5">{spec.value}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="lg:col-span-7 space-y-12 text-left">
-            
-            <div className="space-y-6">
-              <h3 className="text-lg font-display text-verde-oscuro font-bold uppercase tracking-wider">
-                📏 Calibres y Peso Promedio
-              </h3>
-              <div className="divide-y divide-crema-hueso/80 border-t border-b border-crema-hueso">
-                {PRODUCT_CONTENT.calibers.map((cal, idx) => (
-                  <div
-                    key={idx}
-                    className="grid grid-cols-12 py-4 items-center hover:bg-crema-hueso/20 transition-colors px-2"
-                  >
-                    <div className="col-span-3 font-display font-extrabold text-base text-verde-oscuro">
-                      Calibre {cal.size}
-                    </div>
-                    <div className="col-span-4 text-sm text-tierra-clara font-medium">
-                      {cal.weight}
-                    </div>
-                    <div className="col-span-5 text-sm text-tierra-clara font-medium text-right italic">
-                      {cal.desc}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
+              <div className="flex flex-col items-center text-center space-y-3">
+                <div className="animate-gentle-float">
+                  <div className="w-16 h-16 rounded-full border-2 border-[#5A8745] flex items-center justify-center bg-[#5A8745]/10 p-0.5 transform hover:scale-110 transition-transform duration-300 cursor-pointer">
+                    <div className="w-full h-full rounded-full bg-[#5A8745] flex items-center justify-center text-white">
+                      <Sprout className="w-6 h-6 stroke-[1.5]" />
                     </div>
                   </div>
-                ))}
+                </div>
+                <div>
+                  <h3 className="text-base font-display text-verde-oscuro font-bold uppercase tracking-wider">
+                    Producción
+                  </h3>
+                  <p className="text-xs text-tierra-clara leading-relaxed font-medium mt-1">
+                    Cultivos gestionados de manera sostenible bajo estrictos estándares agrícolas.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center text-center space-y-3">
+                <div className="animate-gentle-float [animation-delay:0.5s]">
+                  <div className="w-16 h-16 rounded-full border-2 border-[#5A8745] flex items-center justify-center bg-[#5A8745]/10 p-0.5 transform hover:scale-110 transition-transform duration-300 cursor-pointer">
+                    <div className="w-full h-full rounded-full bg-[#5A8745] flex items-center justify-center text-white">
+                      <BadgeCheck className="w-6 h-6 stroke-[1.5]" />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-base font-display text-verde-oscuro font-bold uppercase tracking-wider">
+                    Selección
+                  </h3>
+                  <p className="text-xs text-tierra-clara leading-relaxed font-medium mt-1">
+                    Clasificación manual rigurosa asegurando categoría de exportación global.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center text-center space-y-3">
+                <div className="animate-gentle-float [animation-delay:1s]">
+                  <div className="w-16 h-16 rounded-full border-2 border-[#5A8745] flex items-center justify-center bg-[#5A8745]/10 p-0.5 transform hover:scale-110 transition-transform duration-300 cursor-pointer">
+                    <div className="w-full h-full rounded-full bg-[#5A8745] flex items-center justify-center text-white">
+                      <CircleDollarSign className="w-6 h-6 stroke-[1.5]" />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-base font-display text-verde-oscuro font-bold uppercase tracking-wider">
+                    Precio
+                  </h3>
+                  <p className="text-xs text-tierra-clara leading-relaxed font-medium mt-1">
+                    Esquemas competitivos y cotizaciones directas que se adaptan a tu negocio.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="space-y-6 pt-4">
-              <h3 className="text-lg font-display text-verde-oscuro font-bold uppercase tracking-wider">
-                📦 Formatos de Embalaje
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                {PRODUCT_CONTENT.packaging.map((pack, idx) => (
-                  <div key={idx} className="space-y-2.5">
-                    <span className="text-xs font-bold text-verde-brand uppercase tracking-wider block border-b border-verde-brand/10 pb-1.5">
-                      {pack.type}
-                    </span>
-                    <p className="text-xs sm:text-sm text-tierra-clara font-medium leading-relaxed">
-                      {pack.use}
-                    </p>
-                  </div>
-                ))}
-              </div>
+            <div className="pt-2">
+              <a
+                href="#contacto"
+                className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold uppercase tracking-wider text-crema-suave bg-[#324331] hover:bg-verde-brand rounded-full transition-all duration-300 hover:scale-[1.01] shadow-lg shadow-[#324331]/10"
+              >
+                Ver Productos
+              </a>
             </div>
-
           </div>
 
         </div>
-
       </div>
     </section>
   );

@@ -44,11 +44,11 @@ export default function Carousel() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAnimating(false);
-    }, 800); // duration of the slide transition
+    }, 800);
     return () => clearTimeout(timer);
   }, [activeIndex]);
 
-  // Autoplay
+
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
@@ -58,7 +58,7 @@ export default function Carousel() {
 
   return (
     <div className="relative w-full h-[55vh] min-h-[400px] md:h-[75vh] md:min-h-[600px] bg-verde-oscuro overflow-hidden select-none">
-      {/* Slides */}
+
       {SLIDES.map((slide, idx) => {
         const isActive = idx === activeIndex;
         return (
@@ -68,7 +68,6 @@ export default function Carousel() {
               isActive ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}
           >
-            {/* Background Image with Ken Burns Effect */}
             <div className="absolute inset-0 bg-[#0c1408]">
               <img
                 src={slide.image}
@@ -81,20 +80,13 @@ export default function Carousel() {
               <div className="absolute inset-0 bg-gradient-to-t from-verde-oscuro via-transparent to-transparent opacity-60"></div>
             </div>
 
-            {/* Content Container */}
             <div className="absolute inset-0 flex items-center">
               <div className="max-w-7xl mx-auto w-full px-6 lg:px-10">
                 <div className="max-w-2xl text-left text-crema-suave space-y-6">
-                  {/* Tag */}
-                  <span
-                    className={`inline-block px-3 py-1 bg-verde-aguacate/20 border border-verde-claro/30 text-verde-claro text-xs font-bold tracking-widest uppercase rounded-full transition-all duration-700 delay-100 transform ${
-                      isActive ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
-                    }`}
-                  >
-                    {slide.tag}
-                  </span>
+
                   
-                  {/* Title */}
+                  
+
                   <h2
                     className={`text-3xl sm:text-5xl lg:text-6xl font-display font-black leading-tight tracking-tight text-white transition-all duration-700 delay-300 transform ${
                       isActive ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
@@ -103,7 +95,6 @@ export default function Carousel() {
                     {slide.title}
                   </h2>
 
-                  {/* Description */}
                   <p
                     className={`text-base sm:text-lg text-crema-suave/80 font-medium leading-relaxed max-w-xl transition-all duration-700 delay-500 transform ${
                       isActive ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
@@ -118,7 +109,6 @@ export default function Carousel() {
         );
       })}
 
-      {/* Navigation Arrows */}
       <button
         onClick={handlePrev}
         className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-white backdrop-blur-md transition-all duration-300 active:scale-95 group focus:outline-none"
@@ -134,7 +124,7 @@ export default function Carousel() {
         <ChevronRight className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-0.5" />
       </button>
 
-      {/* Indicators / Progress bars */}
+
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
         {SLIDES.map((_, idx) => (
           <button
@@ -147,9 +137,7 @@ export default function Carousel() {
             className="group relative h-1.5 focus:outline-none"
             style={{ width: '48px' }}
           >
-            {/* Track background */}
             <span className="absolute inset-0 bg-white/20 rounded-full transition-colors group-hover:bg-white/30"></span>
-            {/* Active filled indicator */}
             <span
               className={`absolute inset-y-0 left-0 bg-verde-claro rounded-full transition-all ease-out ${
                 idx === activeIndex ? 'w-full duration-[6000ms]' : 'w-0 duration-0'
