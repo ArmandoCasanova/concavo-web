@@ -14,7 +14,7 @@ export default function AboutUs() {
             <div className="aspect-[4/5] rounded-[3rem] rounded-tr-[9rem] overflow-hidden shadow-2xl border border-crema-suave/10">
               <img
                 src={orchardImg}
-                alt="Huertos en Uruapan, Michoacán"
+                alt="Huertos en Ario de Rosales, Michoacán"
                 className="w-full h-full object-cover transform hover:scale-[1.03] transition-transform duration-1000"
                 loading="lazy"
               />

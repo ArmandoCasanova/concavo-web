@@ -18,7 +18,7 @@ export default function App() {
         <Separator bgPattern="slices" message="Sabor Natural en Cada Cosecha" />
         <Product />
         <AboutUs />
-        <Separator bgPattern="leaves" message="Compromiso con la Tierra y Nuestra Gente" />
+        <Separator bgPattern="leaves" message="ENCUÉNTRANOS" />
         <Location />
         <Contact />
       </main>

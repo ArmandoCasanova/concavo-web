@@ -17,7 +17,7 @@ export default function Footer() {
               />
             </a>
             <p className="text-xs text-crema-suave/60 leading-relaxed max-w-sm font-medium">
-              Suministro constante y calidad controlada directo desde Uruapan, Michoacán hacia distribuidores nacionales y globales.
+              Suministro constante y calidad controlada directo desde Ario de Rosales, Michoacán hacia distribuidores nacionales y globales.
             </p>
           </div>
 

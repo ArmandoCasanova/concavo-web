@@ -111,40 +111,57 @@ export default function Carousel() {
 
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-white backdrop-blur-md transition-all duration-300 active:scale-95 group focus:outline-none"
+        className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-white backdrop-blur-md transition-all duration-300 active:scale-95 group focus:outline-none"
         aria-label="Anterior"
       >
         <ChevronLeft className="w-6 h-6 transition-transform duration-300 group-hover:-translate-x-0.5" />
       </button>
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-white backdrop-blur-md transition-all duration-300 active:scale-95 group focus:outline-none"
+        className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-white backdrop-blur-md transition-all duration-300 active:scale-95 group focus:outline-none"
         aria-label="Siguiente"
       >
         <ChevronRight className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-0.5" />
       </button>
 
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-4 sm:gap-6">
+        <button
+          onClick={handlePrev}
+          className="flex md:hidden w-9 h-9 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-white backdrop-blur-md transition-all duration-300 active:scale-95 focus:outline-none"
+          aria-label="Anterior"
+        >
+          <ChevronLeft className="w-4 h-4" />
+        </button>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
-        {SLIDES.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => {
-              if (isAnimating) return;
-              setIsAnimating(true);
-              setActiveIndex(idx);
-            }}
-            className="group relative h-1.5 focus:outline-none"
-            style={{ width: '48px' }}
-          >
-            <span className="absolute inset-0 bg-white/20 rounded-full transition-colors group-hover:bg-white/30"></span>
-            <span
-              className={`absolute inset-y-0 left-0 bg-verde-claro rounded-full transition-all ease-out ${
-                idx === activeIndex ? 'w-full duration-[6000ms]' : 'w-0 duration-0'
-              }`}
-            ></span>
-          </button>
-        ))}
+        <div className="flex gap-2.5">
+          {SLIDES.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => {
+                if (isAnimating) return;
+                setIsAnimating(true);
+                setActiveIndex(idx);
+              }}
+              className="group relative h-1.5 focus:outline-none"
+              style={{ width: '36px' }}
+            >
+              <span className="absolute inset-0 bg-white/20 rounded-full transition-colors group-hover:bg-white/30"></span>
+              <span
+                className={`absolute inset-y-0 left-0 bg-verde-claro rounded-full transition-all ease-out ${
+                  idx === activeIndex ? 'w-full duration-[6000ms]' : 'w-0 duration-0'
+                }`}
+              ></span>
+            </button>
+          ))}
+        </div>
+
+        <button
+          onClick={handleNext}
+          className="flex md:hidden w-9 h-9 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-white backdrop-blur-md transition-all duration-300 active:scale-95 focus:outline-none"
+          aria-label="Siguiente"
+        >
+          <ChevronRight className="w-4 h-4" />
+        </button>
       </div>
     </div>
   );
