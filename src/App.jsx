@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar';
+import Carousel from './components/Carousel';
 import Hero from './components/Hero';
 import Product from './components/Product';
 import AboutUs from './components/AboutUs';
@@ -11,6 +12,7 @@ export default function App() {
     <div className="min-h-screen flex flex-col bg-crema-suave text-tierra-mate selection:bg-verde-aguacate/20">
       <Navbar />
       <main className="flex-grow">
+        <Carousel />
         <Hero />
         <Product />
         <AboutUs />
