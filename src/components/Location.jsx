@@ -45,7 +45,9 @@ export default function Location() {
             <div>
               <h3 className="text-xs sm:text-sm font-bold text-verde-oscuro uppercase tracking-wider">Teléfono</h3>
               <p className="text-xs sm:text-lg text-tierra-clara font-semibold mt-1 sm:mt-2 break-all">
-                {COMPANY_INFO.phone}
+                <a href={`tel:${COMPANY_INFO.phone.replace(/\s+/g, '')}`} className="hover:underline">
+                  {COMPANY_INFO.phone}
+                </a>
               </p>
             </div>
           </div>
@@ -57,7 +59,9 @@ export default function Location() {
             <div>
               <h3 className="text-xs sm:text-sm font-bold text-verde-oscuro uppercase tracking-wider">Correo</h3>
               <p className="text-xs sm:text-lg text-tierra-clara font-semibold mt-1 sm:mt-2 break-all">
-                {COMPANY_INFO.email}
+                <a href={`mailto:${COMPANY_INFO.email}`} className="hover:underline">
+                  {COMPANY_INFO.email}
+                </a>
               </p>
             </div>
           </div>
