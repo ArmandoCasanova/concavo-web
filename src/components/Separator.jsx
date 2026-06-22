@@ -3,7 +3,7 @@ import patternSlices from '../assets/pattern_avocado_slices.png';
 import patternLeaves from '../assets/pattern_avocado_leaves.png';
 import patternOil from '../assets/pattern_avocado_oil.png';
 
-export default function Separator({ bgPattern = 'slices', message = '' }) {
+export default function Separator({ bgPattern = 'slices', message = '', id }) {
   const getPatternImage = () => {
     switch (bgPattern) {
       case 'slices':
@@ -19,8 +19,8 @@ export default function Separator({ bgPattern = 'slices', message = '' }) {
   };
 
   return (
-    <div className="relative w-full h-24 md:h-28 flex items-center justify-center overflow-hidden border-y border-black/5">
-      <div 
+    <div id={id} className="relative w-full h-24 md:h-28 flex items-center justify-center overflow-hidden border-y border-black/5">
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${getPatternImage()})` }}
       />

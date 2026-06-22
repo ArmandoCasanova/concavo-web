@@ -73,7 +73,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.tiktok.com/@conavooficial"
+                  href="https://www.tiktok.com/@crescenciano.tino"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-verde-claro transition-colors"

@@ -15,10 +15,10 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-crema-suave text-tierra-mate selection:bg-verde-aguacate/20">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow pt-[80px] md:pt-[92px]">
         <Carousel />
         <Hero />
-        <Separator bgPattern="slices" message="Sabor Natural en Cada Cosecha" />
+        <Separator id="producto" bgPattern="slices" message="Sabor Natural en Cada Cosecha" />
         <Product />
         <AboutUs />
         <Separator bgPattern="leaves" message="ENCUÉNTRANOS" />

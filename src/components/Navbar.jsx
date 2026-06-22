@@ -35,14 +35,14 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`sticky top-0 z-50 transition-all duration-500 ${isScrolled
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
           ? 'bg-crema-suave/80 backdrop-blur-lg border-b border-verde-brand/5 py-4'
-          : 'bg-transparent py-7'
+          : 'bg-crema-suave border-b border-verde-brand/5 py-5'
           }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-5 md:gap-5">
+            <div className="flex items-center gap-2 md:gap-2">
               <a href="#inicio" className="flex items-center transition-transform hover:scale-[1.01]">
                 <img
                   src={isotipo}
@@ -88,7 +88,7 @@ export default function Navbar() {
 
             <div className="md:hidden flex items-center gap-3">
               <a
-                href="https://wa.me/5214251120437?text=Hola!,%20Me%20gustaría%20más%20información%20sobre%20los%20aguacates."
+                href="https://wa.me/5214251120437?text=Hola!,%20me%20gustaría%20más%20información%20sobre%20los%20aguacates."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-1.5 text-verde-oscuro hover:text-verde-brand transition-colors"
@@ -99,7 +99,7 @@ export default function Navbar() {
                 </svg>
               </a>
               <a
-                href="https://www.tiktok.com/@conavoficial"
+                href="https://www.tiktok.com/@crescenciano.tino"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-1.5 text-verde-oscuro hover:text-verde-brand transition-colors"
@@ -155,7 +155,7 @@ export default function Navbar() {
 
       <div className="hidden md:flex flex-col gap-3 fixed bottom-6 right-6 z-50">
         <a
-          href="https://wa.me/5214251120437?text=Hola!,%20Me%20gustaría%20más%20información%20sobre%20los%20aguacates."
+          href="https://wa.me/5214251120437?text=Hola!,%20me%20gustaría%20más%20información%20sobre%20los%20aguacates."
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebd59] text-white flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110"
@@ -166,7 +166,7 @@ export default function Navbar() {
           </svg>
         </a>
         <a
-          href="https://www.tiktok.com/@conavoficial"
+          href="https://www.tiktok.com/@crescenciano.tino"
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 rounded-full bg-black hover:bg-[#1a1a1a] text-white flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110"

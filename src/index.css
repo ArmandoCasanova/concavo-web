@@ -6,6 +6,12 @@
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-padding-top: 80px;
+  }
+  @media (min-width: 768px) {
+    html {
+      scroll-padding-top: 80px;
+    }
   }
 
   body {
@@ -61,6 +67,7 @@
 .reveal-slide-up {
   transform: translateY(40px);
 }
+
 .reveal-slide-up.revealed {
   opacity: 1;
   transform: translateY(0);
@@ -69,6 +76,7 @@
 .reveal-slide-left {
   transform: translateX(-40px);
 }
+
 .reveal-slide-left.revealed {
   opacity: 1;
   transform: translateX(0);
@@ -77,6 +85,7 @@
 .reveal-slide-right {
   transform: translateX(40px);
 }
+
 .reveal-slide-right.revealed {
   opacity: 1;
   transform: translateX(0);
@@ -85,15 +94,36 @@
 .reveal-scale-up {
   transform: scale(0.96);
 }
+
 .reveal-scale-up.revealed {
   opacity: 1;
   transform: scale(1);
 }
 
-.delay-75 { transition-delay: 75ms; }
-.delay-100 { transition-delay: 100ms; }
-.delay-150 { transition-delay: 150ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
-.delay-500 { transition-delay: 500ms; }
+.delay-75 {
+  transition-delay: 75ms;
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-150 {
+  transition-delay: 150ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
+}

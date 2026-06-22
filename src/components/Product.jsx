@@ -5,7 +5,7 @@ import avocadoVecBg from '../assets/avocadovec.svg';
 
 export default function Product() {
   return (
-    <section id="producto" className="relative py-12 md:py-20 lg:pb-0 overflow-hidden bg-[#bc5b27]">
+    <section className="relative py-12 md:py-20 lg:pb-0 overflow-hidden bg-[#bc5b27]">
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
           src={avocadoVecBg}

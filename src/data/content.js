@@ -3,8 +3,8 @@ export const COMPANY_INFO = {
   name: 'Conavo',
   tagline: 'Agroindustrial',
   phone: '+52 1 425 112 0437',
-  whatsapp: 'https://wa.me/5214251120437?text=Hola!,%20Me%20gustaría%20más%20información%20sobre%20los%20aguacates.',
-  email: 'contacto@conavoagro.com',
+  whatsapp: 'https://wa.me/5214251120437?text=Hola!,%20me%20gustaría%20más%20información%20sobre%20los%20aguacates.',
+  email: 'contacto@conavoaguacate.com',
   address: 'Salvador Azuela #268 Central de Abastos Morelia',
   mapsEmbedUrl: 'https://maps.google.com/maps?q=Salvador%20Azuela%20268,%20Central%20de%20Abastos,%20Morelia,%20Michoac%C3%A1n&t=&z=16&ie=UTF8&iwloc=&output=embed',
 };

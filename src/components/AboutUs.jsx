@@ -9,7 +9,7 @@ export default function AboutUs() {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           <div className="lg:col-span-5 relative reveal reveal-slide-left">
             <div className="aspect-[4/5] rounded-[3rem] rounded-tr-[9rem] overflow-hidden shadow-2xl border border-crema-suave/10">
               <img
